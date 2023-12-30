@@ -23,8 +23,7 @@ _**Instruction to clone and run the repository**_
       1. clone the repository, 
 
 
-            git clone https://github.com/rkverma2022/Task-2_mercor.git
-
+            git clone https://github.com/rkverma2022/AI-chatbot.github.io.git 
       2. install the required module
 
           pip install -r requirementss.txt
@@ -46,5 +45,9 @@ _**Instruction to clone and run the repository**_
 
 
 # SHER_AI_Assistant
+
 ~Regards
+
+<a href = "https://www.linkedin.com/company/98176407/admin/analytics/followers/">
 Society of Humanity Education and Research
+</a>
