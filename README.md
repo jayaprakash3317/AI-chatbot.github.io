@@ -1,7 +1,6 @@
-
-    <a href="https://play.google.com/store/apps/details?id=com.rkverma.sherapp" style="display: inline-block; padding: 40px 80px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px;">SHER APP</a>
-    <a href="https://top108.web.app/" style="display: inline-block; padding: 40px 80px; background-color: #4CAF50; color: white; text-decoration: none; margin-left: 10px; border-radius: 5px;">Top 108 Companies Updates</a>
-    <a href="https://www.linkedin.com/in/rajkumar-verma-353966222/" style="display: inline-block; padding: 40px 80px; background-color: #4CAF50; color: white; text-decoration: none; margin-left: 10px; border-radius: 5px;">Contact Me</a>
+<a href="https://play.google.com/store/apps/details?id=com.rkverma.sherapp" style="display: inline-block; padding: 40px 80px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px;">SHER APP</a>
+<a href="https://top108.web.app/" style="display: inline-block; padding: 40px 80px; background-color: #4CAF50; color: white; text-decoration: none; margin-left: 10px; border-radius: 5px;">Top 108 Companies Updates</a>
+<a href="https://www.linkedin.com/in/rajkumar-verma-353966222/" style="display: inline-block; padding: 40px 80px; background-color: #4CAF50; color: white; text-decoration: none; margin-left: 10px; border-radius: 5px;">Contact Me</a>
 
 
 
