@@ -1,5 +1,8 @@
 from django.shortcuts import render, HttpResponse
-import tensorflow as tf
+# import tensorflow as tf
+import tensorflow.lite as Tflite
+from tensorflow.keras.preprocessing.sequence import pad_sequences
+from tensorflow.keras.preprocessing.text import Tokenizer
 import json
 import numpy as np
 from django.http import JsonResponse
@@ -12,9 +15,8 @@ def index(request):
 def contact(request):
     return HttpResponse("contact us")
 
-
-
-
+def about(request):
+    return render(request,'about.html')
 
 def process_input(request):
     user_input = request.POST.get('user_input')
@@ -22,14 +24,14 @@ def process_input(request):
     with open("chatbot_app/chatbotmodel/tokenizer_word_index.json", "r") as f:
         word_index = json.load(f)
 
-    interpreter = tf.lite.Interpreter(model_path="chatbot_app/chatbotmodel/chatbot_model.tflite")
+    interpreter = Tflite.Interpreter(model_path="chatbot_app/chatbotmodel/chatbot_model.tflite")
     interpreter.allocate_tensors()
 
     input_details = interpreter.get_input_details()
     output_details = interpreter.get_output_details()
 
     def predict(input_text):
-        tokenizer = tf.keras.preprocessing.text.Tokenizer()
+        tokenizer = Tokenizer()
         tokenizer.word_index = word_index
 
         seed_text = input_text
@@ -47,7 +49,7 @@ def process_input(request):
 
         while next_word != "ouavjra":
             token_list = tokenizer.texts_to_sequences([seed_text])[0]
-            token_list = tf.keras.preprocessing.sequence.pad_sequences([token_list], maxlen=input_details[0]['shape'][1], padding='pre')
+            token_list = pad_sequences([token_list], maxlen=input_details[0]['shape'][1], padding='pre')
 
             input_data = token_list.astype(np.float32)
             interpreter.set_tensor(input_details[0]['index'], input_data)
