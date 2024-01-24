@@ -6,10 +6,7 @@
 
 _**Instruction to clone and run the repository**_
 
-      1. clone the repository, 
-
-
-            git clone https://github.com/rkverma2022/AI-chatbot.github.io.git 
+      
       2. install the required module
 
           pip install -r requirementss.txt
