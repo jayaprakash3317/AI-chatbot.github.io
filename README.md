@@ -6,10 +6,7 @@
 
 
 
-# SHER_AI_Assistant
-_@owner and @author: **Rajkumar Verma**_
 
-_**SHER AI Assistant is a tool of SHER APP to help users to interact.**___
 
 _**Instruction to clone and run the repository**_
 
@@ -37,10 +34,3 @@ _**Instruction to clone and run the repository**_
                               
 
 
-# SHER_AI_Assistant
-
-~Regards
-
-<a href = "https://www.linkedin.com/company/98176407/admin/analytics/followers/">
-Society of Humanity Education and Research
-</a>
